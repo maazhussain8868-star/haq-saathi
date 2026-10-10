@@ -1,0 +1,133 @@
+[
+  {
+    "id": "pf-1",
+    "category": "bank_ombudsman",
+    "name": "Bank: No prior written complaint",
+    "params": { "hasWrittenComplaint": false, "daysSinceComplaint": 0, "isRejectedByBank": false },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-2",
+    "category": "bank_ombudsman",
+    "name": "Bank: Only 5 days passed without rejection",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 5, "isRejectedByBank": false },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-3",
+    "category": "bank_ombudsman",
+    "name": "Bank: 22 days passed without rejection",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 22, "isRejectedByBank": false },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-4",
+    "category": "bank_ombudsman",
+    "name": "Bank: Time-barred (420 days with no reply)",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 420, "isRejectedByBank": false },
+    "expectedStatus": "TIME_BARRED",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-5",
+    "category": "bank_ombudsman",
+    "name": "Bank: Time-barred (Rejected 390 days ago)",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 410, "isRejectedByBank": true, "daysSinceReply": 390 },
+    "expectedStatus": "TIME_BARRED",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-6",
+    "category": "bank_ombudsman",
+    "name": "Bank: Valid (35 days passed without reply)",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 35, "isRejectedByBank": false },
+    "expectedStatus": "READY",
+    "expectedDefective": false
+  },
+  {
+    "id": "pf-7",
+    "category": "bank_ombudsman",
+    "name": "Bank: Valid (Formally rejected after 10 days)",
+    "params": { "hasWrittenComplaint": true, "daysSinceComplaint": 10, "isRejectedByBank": true, "daysSinceReply": 2 },
+    "expectedStatus": "READY",
+    "expectedDefective": false
+  },
+  {
+    "id": "pf-8",
+    "category": "consumer_dispute",
+    "name": "Consumer: Time-barred (> 2 years / 800 days)",
+    "params": { "considerationPaid": 25000, "daysSinceCauseOfAction": 800 },
+    "expectedStatus": "TIME_BARRED",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-9",
+    "category": "consumer_dispute",
+    "name": "Consumer: District Commission (Rs 35,000)",
+    "params": { "considerationPaid": 35000, "daysSinceCauseOfAction": 40 },
+    "expectedStatus": "READY",
+    "expectedDefective": false,
+    "expectedForum": "District Consumer Disputes Redressal Commission"
+  },
+  {
+    "id": "pf-10",
+    "category": "consumer_dispute",
+    "name": "Consumer: State Commission (Rs 75 Lakhs)",
+    "params": { "considerationPaid": 7500000, "daysSinceCauseOfAction": 90 },
+    "expectedStatus": "READY",
+    "expectedDefective": false,
+    "expectedForum": "State Consumer Disputes Redressal Commission (SCDRC)"
+  },
+  {
+    "id": "pf-11",
+    "category": "consumer_dispute",
+    "name": "Consumer: National Commission NCDRC (Rs 3.5 Crore)",
+    "params": { "considerationPaid": 35000000, "daysSinceCauseOfAction": 120 },
+    "expectedStatus": "READY",
+    "expectedDefective": false,
+    "expectedForum": "National Consumer Disputes Redressal Commission (NCDRC)"
+  },
+  {
+    "id": "pf-12",
+    "category": "police_fir_refusal",
+    "name": "Police: Never visited station",
+    "params": { "approachedStation": false, "stationRefused": false, "sentToSP": false },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-13",
+    "category": "police_fir_refusal",
+    "name": "Police: Station inquiry pending (not refused)",
+    "params": { "approachedStation": true, "stationRefused": false, "sentToSP": false },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-14",
+    "category": "police_fir_refusal",
+    "name": "Police: Sent to SP only 4 days ago",
+    "params": { "approachedStation": true, "stationRefused": true, "sentToSP": true, "daysSinceSP": 4 },
+    "expectedStatus": "WAIT",
+    "expectedDefective": true
+  },
+  {
+    "id": "pf-15",
+    "category": "police_fir_refusal",
+    "name": "Police: Station refused, ready for SP notice",
+    "params": { "approachedStation": true, "stationRefused": true, "sentToSP": false },
+    "expectedStatus": "READY",
+    "expectedDefective": false
+  },
+  {
+    "id": "pf-16",
+    "category": "police_fir_refusal",
+    "name": "Police: SP took no action after 20 days, ready for Magistrate",
+    "params": { "approachedStation": true, "stationRefused": true, "sentToSP": true, "daysSinceSP": 20 },
+    "expectedStatus": "READY",
+    "expectedDefective": false
+  }
+]

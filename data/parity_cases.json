@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Farmer 72h Calamity (Hailstorm)",
+    "expected_category": "farmer_pmfby",
+    "expected_engine_status": "WITHIN_72H",
+    "inputs": {
+      "en": "Hailstorm destroyed our cotton crop yesterday. Enrolled under PMFBY.",
+      "hi": "कल ओलावृष्टि से हमारी कपास की फसल बर्बाद हो गई। पीएमएफबीवाई में नामांकित हैं।",
+      "te": "నిన్న కురిసిన వడగండ్ల వానకు మా పత్తి పంట పాడైంది. PMFBY పంట బీమా ఉంది.",
+      "ur": "کل ژالہ باری سے ہماری کپاس کی فصل تباہ ہو گئی۔ فصل بیمہ میں اندراج ہے۔",
+      "mr": "काल गारपिटीमुळे आमचे कापसाचे पीक नष्ट झाले. पीक विमा भरलेला आहे.",
+      "ta": "நேற்று ஆலங்கட்டி மழையால் எங்கள் பருத்தி பயிர் சேதமடைந்தது. பயிர் காப்பீடு உள்ளது."
+    }
+  },
+  {
+    "id": 2,
+    "name": "Farmer Calamity Past 72h (Expired)",
+    "expected_category": "farmer_pmfby",
+    "expected_engine_status": "WINDOW_EXPIRED",
+    "inputs": {
+      "en": "Flooding occurred 4 days ago (96 hours). Crop completely damaged under PMFBY.",
+      "hi": "4 दिन पहले (96 घंटे) बाढ़ आई थी। पीएमएफबीवाई फसल पूरी तरह बर्बाद।",
+      "te": "4 రోజుల క్రితం వరద వచ్చింది. పంట బీమా కింద మొత్తం పంట నష్టపోయింది.",
+      "ur": "چار دن پہلے سیلاب آیا تھا۔ فصل بیمہ کے تحت فصل مکمل تباہ ہو گئی۔",
+      "mr": "४ दिवसांपूर्वी पूर आला होता. पीक विम्यात संपूर्ण नुकसान झाले.",
+      "ta": "4 நாட்களுக்கு முன்பு வெள்ளம் ஏற்பட்டது. பயிர் காப்பீட்டில் முழு சேதம்."
+    }
+  },
+  {
+    "id": 3,
+    "name": "Village Woman Free Legal Aid",
+    "expected_category": "legal_aid_s12",
+    "expected_engine_status": "ELIGIBLE",
+    "inputs": {
+      "en": "I am a village woman and need free lawyer under government legal aid section 12.",
+      "hi": "मैं एक ग्रामीण महिला हूँ और मुझे धारा 12 के तहत मुफ्त कानूनी सहायता वकील चाहिए।",
+      "te": "నేను గ్రామీణ మహిళను, సెక్షన్ 12 కింద ఉచిత న్యాయవాది సహాయం కావాలి.",
+      "ur": "میں ایک دیہاتی خاتون ہوں اور سیکشن 12 کے تحت مفت وکیل کی امداد درکار ہے۔",
+      "mr": "मी एक ग्रामीण महिला असून मला कलम १२ अंतर्गत मोफत वकील हवा आहे.",
+      "ta": "நான் ஒரு கிராமத்து பெண், பிரிவு 12-ன் கீழ் இலவச வழக்கறிஞர் உதவி தேவை."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Person with Disability Legal Aid",
+    "expected_category": "legal_aid_s12",
+    "expected_engine_status": "ELIGIBLE",
+    "inputs": {
+      "en": "Person with physical disability cheated in property. Need free legal aid advocate.",
+      "hi": "दिव्यांग व्यक्ति के साथ संपत्ति में धोखाधड़ी हुई। मुफ्त कानूनी सहायता वकील चाहिए।",
+      "te": "దివ్యాంగుడికి ఆస్తిలో మోసం జరిగింది. ఉచిత న్యాయవాది సహాయం కావాలి.",
+      "ur": "معذور شخص کے ساتھ جائیداد میں دھوکہ ہوا۔ مفت قانونی وکیل کی ضرورت ہے۔",
+      "mr": "दिव्यांग व्यक्तीची मालमत्तेत फसवणूक झाली. मोफत कायदेशीर मदत वकील हवा आहे.",
+      "ta": "மாற்றுத்திறனாளி சொத்து விவகாரத்தில் ஏமாற்றப்பட்டார். இலவச வழக்கறிஞர் உதவி தேவை."
+    }
+  },
+  {
+    "id": 5,
+    "name": "MSME Overdue IT Invoice (60 days)",
+    "expected_category": "msme_delayed_payment",
+    "expected_engine_status": "OVERDUE",
+    "inputs": {
+      "en": "Small IT services firm invoice overdue by 60 days. Udyam registered.",
+      "hi": "स्मॉल आईटी सर्विसेज फर्म का इनवॉयस 60 दिनों से बकाया है। उद्यम पंजीकृत।",
+      "te": "చిన్న ఐటీ సంస్థ ఇన్వాయిస్ 60 రోజులుగా పెండింగ్‌లో ఉంది. ఉద్యమ్ రిజిస్టర్డ్.",
+      "ur": "چھوٹی آئی ٹی فرم کا انوائس 60 دنوں سے واجب الادا ہے۔ ادیم رجسٹرڈ۔",
+      "mr": "लहान आयटी फर्मचे इनव्हॉइस ६० दिवसांपासून थकीत आहे. उद्यम नोंदणीकृत.",
+      "ta": "சிறிய ஐடி நிறுவனத்தின் விலைப்பட்டியல் 60 நாட்களாக நிலுவையில் உள்ளது. உத்யம் பதிவு."
+    }
+  },
+  {
+    "id": 6,
+    "name": "Micro Supplier Overdue Invoice",
+    "expected_category": "msme_delayed_payment",
+    "expected_engine_status": "OVERDUE",
+    "inputs": {
+      "en": "Micro supplier unpaid invoice past 45 days limit. Claiming 3x bank rate interest.",
+      "hi": "माइक्रो सप्लायर का बकाया बिल 45 दिन की सीमा पार कर चुका है। 3 गुना ब्याज दावा।",
+      "te": "మైక్రో సరఫరాదారు బకాయి బిల్లు 45 రోజుల పరిమితి దాటింది. 3 రెట్లు వడ్డీ.",
+      "ur": "مائیکرو سپلائر کا غیر ادا شدہ بل 45 دن کی حد سے تجاوز کر گیا۔ 3 گنا سود۔",
+      "mr": "मायक्रो पुरवठादाराचे बिल ४५ दिवसांच्या मर्यादेनंतरही थकीत आहे. ३ पट व्याज.",
+      "ta": "மைக்ரோ சப்ளையர் பில் 45 நாட்கள் வரம்பை தாண்டியது. 3 மடங்கு வட்டி."
+    }
+  },
+  {
+    "id": 7,
+    "name": "Bank Disputed UPI (35 days passed)",
+    "expected_category": "bank_ombudsman",
+    "expected_engine_status": "READY",
+    "inputs": {
+      "en": "Unauthorized UPI deduction 35 days ago. Bank rejected written grievance.",
+      "hi": "35 दिन पहले अनधिकृत यूपीआई कटौती हुई। बैंक ने लिखित शिकायत खारिज कर दी।",
+      "te": "30 రోజుల క్రితం అనధికారికంగా డబ్బు డెబిట్ అయ్యింది. బ్యాంక్ తిరస్కరించింది.",
+      "ur": "35 دن پہلے اکاؤنٹ سے رقم کٹ گئی۔ بینک نے تحریری شکایت مسترد کر دی۔",
+      "mr": "३५ दिवसांपूर्वी अनधिकृत यूपीआय व्यवहार झाला. बँकेने तक्रार नाकारली.",
+      "ta": "35 நாட்களுக்கு முன்பு அங்கீகரிக்கப்படாத யுபிஐ பரிவர்த்தனை. வங்கி நிராகரித்தது."
+    }
+  },
+  {
+    "id": 8,
+    "name": "Bank Complaint Premature (5 days)",
+    "expected_category": "bank_ombudsman",
+    "expected_engine_status": "WAIT",
+    "inputs": {
+      "en": "Debited via UPI 5 days ago. Written complaint submitted to bank, awaiting response.",
+      "hi": "5 दिन पहले यूपीआई से पैसे कटे। बैंक को लिखित शिकायत दी है, जवाब की प्रतीक्षा है।",
+      "te": "5 రోజుల క్రితం బ్యాంక్ కి ఫిర్యాదు చేశాను, ఇంకా స్పందన రాలేదు.",
+      "ur": "5 دن پہلے بینک میں تحریری شکایت دی، جواب کا انتظار ہے۔",
+      "mr": "५ दिवसांपूर्वी बँकेला लेखी तक्रार दिली, उत्तराची वाट पाहत आहे.",
+      "ta": "5 நாட்களுக்கு முன்பு வங்கியில் எழுத்துப்பூர்வ புகார் அளிக்கப்பட்டது."
+    }
+  },
+  {
+    "id": 9,
+    "name": "Police Refused FIR (BNSS Ladder)",
+    "expected_category": "police_fir_refusal",
+    "expected_engine_status": "READY",
+    "inputs": {
+      "en": "Police station refused to register FIR for stolen vehicle under BNSS.",
+      "hi": "थाना प्रभारी ने चोरी की एफआईआर (FIR) दर्ज करने से मना कर दिया। बीएनएसएस।",
+      "te": "పోలీస్ స్టేషన్‌లో ఎఫ్‌ఐఆర్ నమోదు చేయడానికి నిరాకరించారు. BNSS.",
+      "ur": "تھانے دار نے چوری کی ایف آئی آر درج کرنے سے انکار کر دیا۔ بی این ایس ایس۔",
+      "mr": "पोलीस ठाण्यात चोरीची एफआयआर नोंदवण्यास नकार दिला. बीएनएसएस.",
+      "ta": "காவல் நிலையத்தில் எஃப்ஐஆர் பதிவு செய்ய மறுத்துவிட்டனர். பிஎன்எஸ்எஸ்."
+    }
+  },
+  {
+    "id": 10,
+    "name": "Consumer Defective Appliance (CPA 2019)",
+    "expected_category": "consumer_dispute",
+    "expected_engine_status": "READY",
+    "inputs": {
+      "en": "Bought defective refrigerator online for Rs 35,000. Seller refused refund.",
+      "hi": "ई-कॉमर्स से 35,000 का फ्रिज खरीदा जो खराब निकला। विक्रेता ने रिफंड से मना किया।",
+      "te": "ఆన్‌లైన్‌లో కొన్న ఫ్రిజ్ పాడైంది, రీఫండ్ నిరాకరించారు. వినియోగదారుల ఫోరం.",
+      "ur": "آن لائن خریدا گیا فریج خراب نکلا۔ دکاندار نے رقم واپس کرنے سے انکار کیا۔",
+      "mr": "ऑनलाइन घेतलेला फ्रिज खराब निघाला. विक्रेत्याने परतावा नाकारला. ग्राहक मंच.",
+      "ta": "ஆன்லைனில் வாங்கிய குளிர்சாதன பெட்டி பழுதானது. விற்பனையாளர் பணத்தை தர மறுத்தார்."
+    }
+  }
+]

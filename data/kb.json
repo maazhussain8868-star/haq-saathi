@@ -1,0 +1,390 @@
+[
+  {
+    "id": "farmer_pmfby",
+    "category": "Farmer / Crop Loss (PMFBY)",
+    "trigger": "crop damage, hailstorm, flood, drought, unseasonal rain, pest attack, harvest loss, kisan, fasal bima, PMFBY, 72 hours, krishi",
+    "steps": [
+      {
+        "text": "Call toll-free helpline 14447 within 72 hours of localised event to get SMS ticket number",
+        "forum": "PMFBY Helpline 14447",
+        "wait_days": 2,
+        "source": "Pradhan Mantri Fasal Bima Yojana Guidelines (pmfby.gov.in)"
+      },
+      {
+        "text": "Upload geotagged crop loss photos via Crop Insurance App or submit to Bank/CSC/Agriculture Officer",
+        "forum": "Crop Insurance App / CSC / Bank",
+        "wait_days": 2,
+        "source": "PMFBY Operational Guidelines"
+      },
+      {
+        "text": "Surveyor must be appointed within 48 hours of intimation to assess loss",
+        "forum": "Insurance Company Surveyor",
+        "wait_days": 10,
+        "source": "PMFBY Claim Settlement Timeline"
+      }
+    ],
+    "rule_note": "Localised calamities (hailstorm, landslide, inundation, cloudburst, lightning fire) and post-harvest loss (within 14 days) strictly require individual intimation within 72 hours. Widespread/area-wide yield loss uses area approach without individual intimation.",
+    "source_urls": ["https://pmfby.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "legal_aid_s12",
+    "category": "Free Legal Aid Eligibility (s.12 LSA Act)",
+    "trigger": "free lawyer, legal aid, poor citizen, cannot afford lawyer, women legal help, SC ST legal aid, NALSA, DLSA, Tele-Law, section 12",
+    "steps": [
+      {
+        "text": "Check eligibility under Section 12 Legal Services Authorities Act (Women, Children, SC/ST, custody, disabled, disaster victims have no income cap)",
+        "forum": "DLSA / SLSA / NALSA",
+        "wait_days": 1,
+        "source": "Section 12 Legal Services Authorities Act 1987"
+      },
+      {
+        "text": "Book free video/phone consultation with panel advocate via CSC or Tele-Law portal/app",
+        "forum": "Tele-Law (tele-law.in)",
+        "wait_days": 3,
+        "source": "Department of Justice Tele-Law Scheme"
+      },
+      {
+        "text": "Call NALSA 24/7 toll-free helpline 15100 or visit local District Legal Services Authority (DLSA) office",
+        "forum": "DLSA / NALSA 15100",
+        "wait_days": 7,
+        "source": "NALSA Citizen Charter (nalsa.gov.in)"
+      }
+    ],
+    "rule_note": "First 7 categories under Section 12 have NO income eligibility test. For general low-income applicants, state-prescribed limit applies (typically up to Rs 3 lakh/yr depending on state).",
+    "source_urls": ["https://nalsa.gov.in", "https://tele-law.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "msme_delayed_payment",
+    "category": "MSME Unpaid Invoice Recovery (MSMED Act)",
+    "trigger": "unpaid invoice, MSME payment delay, buyer not paying, 45 days overdue, Udyam registered, 3x bank rate interest, vendor dues, IT service invoice",
+    "steps": [
+      {
+        "text": "Send formal statutory demand notice citing Section 15 & 16 of MSMED Act and Section 43B(h) IT Act",
+        "forum": "Direct Buyer Formal Notice",
+        "wait_days": 15,
+        "source": "Section 15 & 16 MSMED Act 2006"
+      },
+      {
+        "text": "File delayed payment reference on MSME ODR / Samadhaan Portal with Udyam number and invoice proofs",
+        "forum": "MSME ODR Portal (champions.gov.in / samadhaan)",
+        "wait_days": 90,
+        "source": "Micro and Small Enterprise Facilitation Council (MSEFC)"
+      },
+      {
+        "text": "MSEFC conciliation / arbitration hearing with statutory compound interest with monthly rests at 3x RBI bank rate",
+        "forum": "MSEFC Arbitration",
+        "wait_days": 90,
+        "source": "Section 16 & 18 MSMED Act 2006"
+      }
+    ],
+    "rule_note": "Applies strictly to Micro and Small suppliers with valid Udyam registration (Medium enterprises generally excluded). Maximum agreed payment period cannot exceed 45 days (15 days if no written agreement). Compound interest with monthly rests at 3x RBI bank rate is mandatory.",
+    "source_urls": ["https://msme.gov.in", "https://samadhaan.msme.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "bank_ombudsman",
+    "category": "Banking & UPI Grievance (RBI Ombudsman)",
+    "trigger": "bank dispute, failed ATM, unauthorized transaction, UPI deduction, loan overcharge, credit card fraud, bank manager refused, account frozen, RBI ombudsman",
+    "steps": [
+      {
+        "text": "Submit written grievance to Branch Manager / Principal Nodal Officer of the bank and get acknowledgement",
+        "forum": "Bank Internal Grievance Cell",
+        "wait_days": 30,
+        "source": "RBI Integrated Ombudsman Scheme 2021 Clause 10"
+      },
+      {
+        "text": "If 30 days lapse without resolution or complaint is rejected/unsatisfactory, escalate to RBI Integrated Ombudsman",
+        "forum": "RBI CMS Portal (cms.rbi.org.in / crpc@rbi.org.in)",
+        "wait_days": 30,
+        "source": "RBI Integrated Ombudsman Scheme 2021"
+      },
+      {
+        "text": "File appeal with Appellate Authority under RBI Scheme within 30 days of Ombudsman award/decision if dissatisfied",
+        "forum": "RBI Appellate Authority (Executive Director)",
+        "wait_days": 30,
+        "source": "Clause 17 RBI Integrated Ombudsman Scheme"
+      }
+    ],
+    "rule_note": "Pre-flight mandatory: Complaint must be made in writing to the bank first. User must wait 30 days unless bank rejects earlier. Limitation: Must file within 1 year of bank's final reply (or 1 year 30 days if no reply). No upper cap on compensation amount for financial loss.",
+    "source_urls": ["https://cms.rbi.org.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "consumer_dispute",
+    "category": "Consumer Protection (Consumer Commission)",
+    "trigger": "defective product, fake goods, refund denied, e-commerce scam, hotel overcharge, flight cancellation refund, warranty dishonoured, misleading ad",
+    "steps": [
+      {
+        "text": "Send written notice / grievance to merchant / service provider and log complaint on National Consumer Helpline (NCH 1915)",
+        "forum": "NCH Helpline 1915 / consumerhelpline.gov.in",
+        "wait_days": 15,
+        "source": "Department of Consumer Affairs Guidelines"
+      },
+      {
+        "text": "Determine jurisdiction based strictly on consideration paid (District Commission: up to Rs 50 lakh; State: Rs 50L - 2 Cr; National: > Rs 2 Cr)",
+        "forum": "Appropriate Consumer Commission",
+        "wait_days": 21,
+        "source": "Consumer Protection (Jurisdiction Rules) 2021"
+      },
+      {
+        "text": "File formal online petition through e-Daakhil portal or physical Commission registry",
+        "forum": "e-Daakhil Portal (edaakhil.nic.in)",
+        "wait_days": 90,
+        "source": "Consumer Protection Act 2019"
+      }
+    ],
+    "rule_note": "Pecuniary jurisdiction is measured STRICTLY by value of consideration paid (not compensation claimed): District <= Rs 50 Lakh, State Rs 50L - 2 Cr, National > Rs 2 Cr. Limitation period is 2 years from cause of action.",
+    "source_urls": ["https://edaakhil.nic.in", "https://consumerhelpline.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "police_fir_refusal",
+    "category": "Police / FIR Refusal (BNSS s.173)",
+    "trigger": "police refused FIR, police station not registering complaint, cognizable offence, zero FIR, theft report refused, SP complaint, magistrate 175, BNSS",
+    "steps": [
+      {
+        "text": "Demand registration of FIR under BNSS s.173 (or Zero FIR at any station for cognizable crime) and get free copy s.173(2)",
+        "forum": "Police Station (SHO)",
+        "wait_days": 1,
+        "source": "Bhartiya Nagarik Suraksha Sanhita (BNSS) 2023 s.173"
+      },
+      {
+        "text": "If officer-in-charge refuses, send written substance of complaint by registered post to Superintendent of Police (SP / DCP) under BNSS s.173(4)",
+        "forum": "Superintendent of Police (SP / DCP)",
+        "wait_days": 15,
+        "source": "BNSS 2023 Section 173(4)"
+      },
+      {
+        "text": "If SP takes no action, file application before Judicial Magistrate under BNSS s.175(3) with affidavit of previous efforts",
+        "forum": "Judicial Magistrate Court",
+        "wait_days": 30,
+        "source": "BNSS 2023 Section 175(3) & s.223"
+      }
+    ],
+    "rule_note": "Under BNSS s.173 (replaced CrPC 154 from 1 July 2024), police must record cognizable complaint. Preliminary inquiry up to 14 days allowed for offenses punishable by 3-7 years. Out of scope: bail, defense, or guilt advice.",
+    "source_urls": ["https://mha.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "human_telelaw",
+    "category": "Human Legal Consultation (Tele-Law / DLSA)",
+    "trigger": "talk to advocate, human legal review, legal aid clinic, court advice, free advice session, Nyaya Bandhu, pro bono advocate",
+    "steps": [
+      {
+        "text": "Book video/audio consultation with panel lawyer through Common Service Centre (CSC) or Tele-Law App",
+        "forum": "Tele-Law (tele-law.in)",
+        "wait_days": 2,
+        "source": "Department of Justice, Govt of India"
+      },
+      {
+        "text": "Apply for assignment of a pro bono panel advocate via Nyaya Bandhu mobile app",
+        "forum": "Nyaya Bandhu (nyayabandhu.coe.gov.in)",
+        "wait_days": 7,
+        "source": "Ministry of Law & Justice"
+      },
+      {
+        "text": "Visit local Taluk/District Legal Services Authority front office for free counsel representation in court",
+        "forum": "DLSA / TLSC Front Office",
+        "wait_days": 5,
+        "source": "NALSA Regulations"
+      }
+    ],
+    "rule_note": "Strictly no private lawyer marketplace, directory or commercial advertisement per BCI Rule 36. Connects only to official Govt Tele-Law and DLSA/NALSA panels.",
+    "source_urls": ["https://tele-law.in", "https://nalsa.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  },
+  {
+    "id": "insurance_grievance",
+    "category": "Insurance Claim Dispute (Unverified)",
+    "trigger": "health insurance claim rejected, motor insurance delay, life insurance policy dispute, cashless rejected, IRDAI, Bima Bharosa, insurance ombudsman",
+    "steps": [
+      {
+        "text": "File formal complaint with Insurance Company Grievance Redressal Officer (GRO)",
+        "forum": "Insurer Grievance Redressal Cell",
+        "wait_days": 15,
+        "source": "IRDAI Protection of Policyholders' Interests Regulations"
+      },
+      {
+        "text": "Escalate to IRDAI Bima Bharosa portal (bimabharosa.irdai.gov.in) or call 155255",
+        "forum": "IRDAI Bima Bharosa",
+        "wait_days": 30,
+        "source": "IRDAI Consumer Forum"
+      },
+      {
+        "text": "Approach Insurance Ombudsman if claim remains unsettled after 30 days (claims up to Rs 50 lakh)",
+        "forum": "Office of Insurance Ombudsman (cioins.co.in)",
+        "wait_days": 60,
+        "source": "Insurance Ombudsman Rules 2017"
+      }
+    ],
+    "rule_note": "Needs official re-verification before final submission. Bima Bharosa handles IRDAI escalations; Insurance Ombudsman handles personal claims up to Rs 50 Lakh.",
+    "source_urls": ["https://bimabharosa.irdai.gov.in", "https://cioins.co.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "telecom_dispute",
+    "category": "Telecom / Broadband Grievance (Unverified)",
+    "trigger": "sim blocked without reason, broadband bill overcharge, mobile portability rejected, MNP dispute, telecom operator grievance, TRAI",
+    "steps": [
+      {
+        "text": "Lodge complaint with Telecom Service Provider customer care and obtain complaint docket number",
+        "forum": "TSP Customer Care (Jio/Airtel/Vi/BSNL)",
+        "wait_days": 7,
+        "source": "Telecom Consumers Protection Regulations"
+      },
+      {
+        "text": "Escalate to Appellate Authority of the respective service provider with docket number",
+        "forum": "Appellate Authority of Service Provider",
+        "wait_days": 30,
+        "source": "TRAI Grievance Redressal Mechanism"
+      },
+      {
+        "text": "Lodge grievance on Department of Telecommunications (DoT) portal / CPGRAMS",
+        "forum": "DoT Grievance Cell / CPGRAMS",
+        "wait_days": 30,
+        "source": "Department of Telecommunications"
+      }
+    ],
+    "rule_note": "Needs official re-verification. Note: TRAI does not directly handle individual subscriber disputes; complaints go to TSP Appellate Authority or consumer forums.",
+    "source_urls": ["https://trai.gov.in", "https://dot.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "cyber_fraud",
+    "category": "Cyber Crime & Financial Fraud (Unverified)",
+    "trigger": "cyber fraud, phishing scam, credit card hacked, money debited online, OTP fraud, fake telegram investment, 1930 helpline, cybercrime",
+    "steps": [
+      {
+        "text": "Immediately dial National Cyber Crime Helpline 1930 to freeze fraudulent bank transfers in the golden hour",
+        "forum": "National Cyber Crime Helpline 1930",
+        "wait_days": 1,
+        "source": "Citizen Financial Cyber Fraud Reporting System"
+      },
+      {
+        "text": "Lodge official online complaint on National Cyber Crime Reporting Portal (cybercrime.gov.in)",
+        "forum": "cybercrime.gov.in",
+        "wait_days": 7,
+        "source": "Ministry of Home Affairs / I4C"
+      },
+      {
+        "text": "Submit acknowledgement with copy of complaint to bank branch within 3 days for zero liability review under RBI circular",
+        "forum": "Bank Branch Grievance Desk",
+        "wait_days": 30,
+        "source": "RBI Limiting Liability of Customers Circular"
+      }
+    ],
+    "rule_note": "Needs official re-verification. Golden hour reporting to 1930 enables immediate lien-marking on suspicious beneficiary accounts.",
+    "source_urls": ["https://cybercrime.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "labour_wages",
+    "category": "Labour & Unpaid Wages (Unverified)",
+    "trigger": "salary unpaid, employer not paying salary, wrongful termination, gratuity withheld, provident fund PF rejected, labour court",
+    "steps": [
+      {
+        "text": "Send written notice of salary demand to employer management",
+        "forum": "Employer HR / Management",
+        "wait_days": 15,
+        "source": "Payment of Wages Act / Code on Wages"
+      },
+      {
+        "text": "File complaint with Labour Commissioner / Conciliation Officer of the jurisdiction",
+        "forum": "Office of Labour Commissioner / SAMADHAN Portal",
+        "wait_days": 45,
+        "source": "Industrial Disputes Act"
+      },
+      {
+        "text": "Approach Labour Court / Industrial Tribunal for claim recovery if conciliation fails",
+        "forum": "Labour Court",
+        "wait_days": 90,
+        "source": "Labour Court Rules"
+      }
+    ],
+    "rule_note": "Needs state-specific re-verification. Distinctions apply between workmen (covered under Industrial Disputes) and managerial roles (civil remedy/negotiation).",
+    "source_urls": ["https://labour.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "rent_tenancy",
+    "category": "Rent & Tenancy Dispute (Unverified)",
+    "trigger": "landlord refusing security deposit, illegal eviction notice, flat deposit refund, rent dispute, tenant harassment, rent authority",
+    "steps": [
+      {
+        "text": "Send formal legal notice to landlord demanding refund of security deposit with proof of handover",
+        "forum": "Direct Notice to Landlord",
+        "wait_days": 15,
+        "source": "Model Tenancy Act / State Rent Control Act"
+      },
+      {
+        "text": "File petition before Rent Authority / Rent Court of the respective district",
+        "forum": "District Rent Authority",
+        "wait_days": 60,
+        "source": "State Specific Tenancy Act"
+      }
+    ],
+    "rule_note": "Needs state-specific re-verification. Tenancy laws vary by state (e.g., Delhi Rent Control Act, Maharashtra Rent Control Act, Model Tenancy Act implementations).",
+    "source_urls": ["https://mohua.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "cpgrams_govt",
+    "category": "Government Public Grievances (CPGRAMS) (Unverified)",
+    "trigger": "passport delay, ration card officer bribe, municipality garbage issue, pension delay, government office no response, CPGRAMS",
+    "steps": [
+      {
+        "text": "Lodge grievance on Centralized Public Grievance Redress and Monitoring System (pgportal.gov.in)",
+        "forum": "CPGRAMS Portal (pgportal.gov.in)",
+        "wait_days": 30,
+        "source": "DARPG Guidelines"
+      },
+      {
+        "text": "If unsatisfied with resolution, file appeal on CPGRAMS within 30 days to Appellate Authority",
+        "forum": "CPGRAMS Nodal Appellate Authority",
+        "wait_days": 30,
+        "source": "CPGRAMS Citizen Charter"
+      }
+    ],
+    "rule_note": "Needs official re-verification. CPGRAMS does not handle court matters, RTI matters, or religious matters.",
+    "source_urls": ["https://pgportal.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": false
+  },
+  {
+    "id": "other",
+    "category": "Other / Low Confidence / Legal Aid Handoff",
+    "trigger": "general legal question, unknown issue, ambiguous grievance, defamation, divorce, property partition, boundary dispute",
+    "steps": [
+      {
+        "text": "This grievance cannot be automatically routed to a standard online ombudsman portal. Safe human review is recommended.",
+        "forum": "Tele-Law / DLSA Front Desk",
+        "wait_days": null,
+        "source": "Haq Saathi Safe Handoff Protocol"
+      },
+      {
+        "text": "Call NALSA toll-free helpline 15100 or visit tele-law.in for guided human legal consultation.",
+        "forum": "NALSA 15100",
+        "wait_days": null,
+        "source": "National Legal Services Authority"
+      }
+    ],
+    "rule_note": "When confidence is below 60% or outside verified ombudsman scope, Haq Saathi does not guess. It safely routes to human legal aid.",
+    "source_urls": ["https://nalsa.gov.in"],
+    "last_verified": "2026-10-10",
+    "verified": true
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "input": "My cotton crop in Satara was destroyed by sudden hailstorm yesterday. I have PMFBY insurance through my Kisan Credit Card.",
+    "expected_category": "farmer_pmfby",
+    "is_verified": true,
+    "persona": "farmer"
+  },
+  {
+    "id": 2,
+    "input": "भारी ओलावृष्टि से मेरी गेहूं की फसल कल बर्बाद हो गई। मुझे 72 घंटे में बीमा कंपनी को क्लेम की सूचना कैसे देनी है?",
+    "expected_category": "farmer_pmfby",
+    "is_verified": true,
+    "persona": "farmer"
+  },
+  {
+    "id": 3,
+    "input": "Unseasonal heavy rains flooded our paddy field 24 hours ago. Our harvest lying in the field is washed away. We need to file claim under fasal bima.",
+    "expected_category": "farmer_pmfby",
+    "is_verified": true,
+    "persona": "farmer"
+  },
+  {
+    "id": 4,
+    "input": "మహబూబ్‌నగర్‌లో నిన్న కురిసిన భారీ వర్షానికి మా పత్తి పంట పూర్తిగా దెబ్బతింది. పంట బీమా క్లెయిమ్ ఎలా చేయాలి?",
+    "expected_category": "farmer_pmfby",
+    "is_verified": true,
+    "persona": "farmer"
+  },
+  {
+    "id": 5,
+    "input": "Lightning caused fire in our harvested crop stock in the field yesterday evening. We have PMFBY insurance receipt.",
+    "expected_category": "farmer_pmfby",
+    "is_verified": true,
+    "persona": "farmer"
+  },
+  {
+    "id": 6,
+    "input": "I am a low-income village woman and my family cannot afford an advocate. Am I eligible for a free lawyer under government legal aid?",
+    "expected_category": "legal_aid_s12",
+    "is_verified": true,
+    "persona": "village_woman"
+  },
+  {
+    "id": 7,
+    "input": "मैं एक अनुसूचित जाति (SC) परिवार से हूँ और हमारे पास कोर्ट केस के लिए वकील की फीस देने के पैसे नहीं हैं। क्या मुझे मुफ्त कानूनी सहायता (NALSA/DLSA) मिल सकती है?",
+    "expected_category": "legal_aid_s12",
+    "is_verified": true,
+    "persona": "village_woman"
+  },
+  {
+    "id": 8,
+    "input": "My brother with physical disability was cheated in land deal. We have very low income and need a free government lawyer under section 12.",
+    "expected_category": "legal_aid_s12",
+    "is_verified": true,
+    "persona": "village_woman"
+  },
+  {
+    "id": 9,
+    "input": "మా కుటుంబానికి ఆదాయం తక్కువ, కోర్టు కేసులో ఉచిత న్యాయవాది (Free Legal Aid / NALSA) సహాయం పొందవచ్చా?",
+    "expected_category": "legal_aid_s12",
+    "is_verified": true,
+    "persona": "village_woman"
+  },
+  {
+    "id": 10,
+    "input": "A factory workman injured on site without compensation, cannot afford court fee. Needs free legal aid panel advocate under Legal Services Authorities Act.",
+    "expected_category": "legal_aid_s12",
+    "is_verified": true,
+    "persona": "village_woman"
+  },
+  {
+    "id": 11,
+    "input": "Our small IT services startup delivered custom software to a corporate client 65 days ago. Invoice of Rs 8.5 lakhs is unpaid. We are Udyam registered.",
+    "expected_category": "msme_delayed_payment",
+    "is_verified": true,
+    "persona": "it_founder"
+  },
+  {
+    "id": 12,
+    "input": "हमने एक बड़ी कंपनी को माल सप्लाई किया था। 50 दिन हो गए हैं लेकिन हमारा बिल का भुगतान नहीं हुआ। हमारा उद्योग आधार (Udyam) माइक्रो रजिस्ट्रेशन है।",
+    "expected_category": "msme_delayed_payment",
+    "is_verified": true,
+    "persona": "it_founder"
+  },
+  {
+    "id": 13,
+    "input": "Buyer has delayed payment for 90 days despite written contract terms of 30 days. As a registered MSME supplier, how do I claim 3x bank rate interest on MSME Samadhaan portal?",
+    "expected_category": "msme_delayed_payment",
+    "is_verified": true,
+    "persona": "it_founder"
+  },
+  {
+    "id": 14,
+    "input": "మా చిన్న సాఫ్ట్‌వేర్ కంపెనీ ఇన్వాయిస్ పేమెంట్ 60 రోజుల నుండి పెండింగ్‌లో ఉంది. MSMED చట్టం ప్రకారం నోటీసు మరియు వడ్డీ ఎలా క్లెయిమ్ చేయాలి?",
+    "expected_category": "msme_delayed_payment",
+    "is_verified": true,
+    "persona": "it_founder"
+  },
+  {
+    "id": 15,
+    "input": "Corporate client refusing to clear vendor invoice citing frivolous excuses past the 45-day statutory limit under MSMED Act. What legal notice can I send under section 15 & 16?",
+    "expected_category": "msme_delayed_payment",
+    "is_verified": true,
+    "persona": "it_founder"
+  },
+  {
+    "id": 16,
+    "input": "Rs 25,000 was debited via UPI from my SBI account but the merchant did not receive it. I complained to the bank 35 days ago in writing and they rejected my claim.",
+    "expected_category": "bank_ombudsman",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 17,
+    "input": "मेरे बैंक खाते से अनधिकृत एटीएम निकासी (unauthorized ATM withdrawal) हुई। बैंक मैनेजर को 32 दिन पहले लिखित शिकायत दी थी लेकिन कोई समाधान नहीं मिला। क्या मैं RBI ओंबुड्समैन जा सकता हूँ?",
+    "expected_category": "bank_ombudsman",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 18,
+    "input": "HDFC bank wrongly charged hidden penalties and refused to reverse them despite written letter 40 days ago. I want to escalate to RBI Banking Ombudsman.",
+    "expected_category": "bank_ombudsman",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 19,
+    "input": "నా బ్యాంక్ ఖాతా నుండి అనధికారికంగా డబ్బు డెబిట్ అయ్యింది, 30 రోజుల క్రితం బ్యాంక్ కి ఫిర్యాదు చేసినా రెస్పాన్స్ లేదు. RBI అంబుడ్స్‌మన్‌కు ఎలా ఫిర్యాదు చేయాలి?",
+    "expected_category": "bank_ombudsman",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 20,
+    "input": "I complained to ICICI Bank nodal officer 31 days ago about unauthorized credit card transaction and got a rejection letter yesterday. How to file on cms.rbi.org.in?",
+    "expected_category": "bank_ombudsman",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 21,
+    "input": "Bought a refrigerator for Rs 35,000 online that stopped cooling within 3 days. Seller and brand refuse replacement or refund. Want to file consumer case.",
+    "expected_category": "consumer_dispute",
+    "is_verified": true,
+    "persona": "consumer"
+  },
+  {
+    "id": 22,
+    "input": "ई-कॉमर्स साइट से 15,000 रुपये का फोन मंगाया लेकिन डब्बे में नकली सामान निकला। कस्टमर केयर ने रिफंड देने से मना कर दिया। उपभोक्ता फोरम (Consumer Commission) में कैसे शिकायत करें?",
+    "expected_category": "consumer_dispute",
+    "is_verified": true,
+    "persona": "consumer"
+  },
+  {
+    "id": 23,
+    "input": "Airline cancelled domestic flight without prior notice and refuses full refund of Rs 18,000 tickets. Want to file on e-Daakhil consumer forum.",
+    "expected_category": "consumer_dispute",
+    "is_verified": true,
+    "persona": "consumer"
+  },
+  {
+    "id": 24,
+    "input": "Car dealership delivered damaged vehicle worth Rs 14 lakhs and denied warranty repair. Which District Consumer Commission has jurisdiction under CPA 2019?",
+    "expected_category": "consumer_dispute",
+    "is_verified": true,
+    "persona": "consumer"
+  },
+  {
+    "id": 25,
+    "input": "Local police station refused to register FIR for my stolen motorbike. The SHO told me to just write a lost property report. What can I do under BNSS?",
+    "expected_category": "police_fir_refusal",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 26,
+    "input": "थाना प्रभारी ने मेरी चोरी की एफआईआर (FIR) दर्ज करने से मना कर दिया। BNSS धारा 173(4) के तहत पुलिस अधीक्षक (SP) को शिकायत पत्र कैसे भेजें?",
+    "expected_category": "police_fir_refusal",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 27,
+    "input": "Police refused zero FIR when my sister was assaulted while traveling in another district. They said go back to home station. How to escalate under section 173(1) BNSS?",
+    "expected_category": "police_fir_refusal",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 28,
+    "input": "పోలీస్ స్టేషన్‌లో దొంగతనం జరిగిన సంఘటనపై ఎఫ్‌ఐఆర్ నమోదు చేయడానికి నిరాకరించారు. BNSS ప్రకారం ఎస్పీ లేదా మేజిస్ట్రేట్‌కు ఎలా ఫిర్యాదు చేయాలి?",
+    "expected_category": "police_fir_refusal",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 29,
+    "input": "I want to schedule a video consultation with a verified government panel lawyer through CSC Tele-Law scheme.",
+    "expected_category": "human_telelaw",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 30,
+    "input": "क्या मैं सीएससी (CSC) सेंटर जाकर टेली-लॉ (Tele-Law) पर सरकारी पैनल के वकील से फोन या वीडियो पर कानूनी सलाह ले सकता हूँ?",
+    "expected_category": "human_telelaw",
+    "is_verified": true,
+    "persona": "citizen"
+  },
+  {
+    "id": 31,
+    "input": "Star Health insurance company arbitrarily rejected my hospitalisation claim of Rs 1.8 lakhs stating pre-existing condition. Already complained to their grievance officer.",
+    "expected_category": "insurance_grievance",
+    "is_verified": false,
+    "persona": "policyholder"
+  },
+  {
+    "id": 32,
+    "input": "बीमा कंपनी ने मेरी कार एक्सीडेंट क्लेम को खारिज कर दिया। बीमा लोकपाल (Insurance Ombudsman) या IRDAI बीमा भरोसा पोर्टल पर कैसे अपील करें?",
+    "expected_category": "insurance_grievance",
+    "is_verified": false,
+    "persona": "policyholder"
+  },
+  {
+    "id": 33,
+    "input": "Airtel broadband disconnected my line and sent an inflated bill of Rs 8,500 without resolution from customer care. Need to escalate to Appellate Authority.",
+    "expected_category": "telecom_dispute",
+    "is_verified": false,
+    "persona": "consumer"
+  },
+  {
+    "id": 34,
+    "input": "I was duped of Rs 75,000 in a telegram work-from-home crypto phishing task scam 2 hours ago. Need to freeze the account immediately.",
+    "expected_category": "cyber_fraud",
+    "is_verified": false,
+    "persona": "victim"
+  },
+  {
+    "id": 35,
+    "input": "साइबर फ्रॉड में मेरे खाते से ऑनलाइन 50,000 रुपये कट गए। 1930 साइबर हेल्पलाइन और cybercrime.gov.in पर रिपोर्ट कैसे दर्ज करें?",
+    "expected_category": "cyber_fraud",
+    "is_verified": false,
+    "persona": "victim"
+  },
+  {
+    "id": 36,
+    "input": "My employer did not pay my last 3 months salary of Rs 1.2 lakhs and terminated me without notice. How to approach Labour Commissioner?",
+    "expected_category": "labour_wages",
+    "is_verified": false,
+    "persona": "worker"
+  },
+  {
+    "id": 37,
+    "input": "My landlord in Bengaluru has vacated me but is refusing to return my Rs 1 lakh security deposit citing fake paint damages.",
+    "expected_category": "rent_tenancy",
+    "is_verified": false,
+    "persona": "tenant"
+  },
+  {
+    "id": 38,
+    "input": "My passport renewal application has been stuck for 8 months with no update from the regional passport office. Want to file CPGRAMS central grievance.",
+    "expected_category": "cpgrams_govt",
+    "is_verified": false,
+    "persona": "citizen"
+  },
+  {
+    "id": 39,
+    "input": "My neighbor is spreading rumors and bad words about our family in the colony. Can I file a civil defamation case?",
+    "expected_category": "other",
+    "is_verified": true,
+    "persona": "general"
+  },
+  {
+    "id": 40,
+    "input": "कुछ समझ नहीं आ रहा, मुझे कानूनी मदद चाहिए किसी पारिवारिक झगड़े के लिए।",
+    "expected_category": "other",
+    "is_verified": true,
+    "persona": "general"
+  }
+]
